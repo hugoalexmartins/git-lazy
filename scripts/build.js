@@ -2,7 +2,7 @@
 
 /**
  * Build script for git-lazy
- * 
+ *
  * This script performs the build process for the git-lazy package:
  * 1. Cleans the dist directory
  * 2. Bundles the JavaScript files
@@ -29,10 +29,7 @@ fs.mkdirSync(DIST_DIR, { recursive: true });
 
 // Copy index.js to dist
 console.log('Copying main index.js...');
-fs.copyFileSync(
-  path.join(ROOT_DIR, 'index.js'),
-  path.join(DIST_DIR, 'index.js')
-);
+fs.copyFileSync(path.join(ROOT_DIR, 'index.js'), path.join(DIST_DIR, 'index.js'));
 
 // Copy source files
 console.log('Copying source files...');
@@ -66,15 +63,15 @@ console.log('Build completed successfully!');
 function copyDir(src, dest) {
   // Create destination directory
   fs.mkdirSync(dest, { recursive: true });
-  
+
   // Get all files in source directory
   const entries = fs.readdirSync(src, { withFileTypes: true });
-  
+
   // Copy each file/directory
   for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
-    
+
     if (entry.isDirectory()) {
       // Recursively copy directories
       copyDir(srcPath, destPath);

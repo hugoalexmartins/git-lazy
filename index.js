@@ -2,7 +2,7 @@
 
 /**
  * git-lazy
- * 
+ *
  * A utility tool for simplifying common git operations
  */
 
