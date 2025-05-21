@@ -1,13 +1,38 @@
 {
   "name": "git-lazy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A utility tool for simplifying common git operations",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "git-lazy": "./index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "prepare": "chmod +x index.js"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "utility",
+    "tools",
+    "productivity"
+  ],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.8.0"
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0"
+  }
 }
