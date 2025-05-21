@@ -14,7 +14,8 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{js,json,md}\"",
-    "prepare": "chmod +x index.js"
+    "prepare": "chmod +x index.js",
+    "build": "node scripts/build.js"
   },
   "keywords": [
     "git",
