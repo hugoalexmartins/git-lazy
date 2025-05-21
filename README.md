@@ -22,6 +22,11 @@ git-lazy [command] [options]
 
 ## Development
 
+### Requirements
+
+- Node.js >= 14.0.0
+- PNPM >= 10.8.0
+
 ### Setup
 
 ```
@@ -37,7 +42,28 @@ pnpm install
 
 - `pnpm start`: Run the tool locally
 - `pnpm test`: Run tests
+- `pnpm test:watch`: Run tests in watch mode
+- `pnpm test:coverage`: Run tests with coverage report
+- `pnpm lint`: Run ESLint to check code quality
+- `pnpm format`: Format code with Prettier
 - `pnpm build`: Build the project
+
+## Code Quality
+
+This project uses ESLint and Prettier to ensure code quality and consistent formatting:
+
+- ESLint enforces code quality rules
+- Prettier ensures consistent code formatting
+
+Run the linting and formatting with:
+
+```bash
+# Check for code quality issues
+pnpm lint
+
+# Format all files
+pnpm format
+```
 
 ## License
 
