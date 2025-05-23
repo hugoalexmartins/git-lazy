@@ -1,70 +1,31 @@
 # git-lazy
 
-A utility tool for simplifying common git operations.
+A focused git commit wrapper with semantic commit patterns and automated message generation.
 
-## Description
+## Would you lazy me the message of the commit? You're still the best!
 
-git-lazy is a Node.js CLI tool designed to make common git operations faster and more convenient. It provides shortcuts and simplified commands for frequently used git workflows.
-
-## Installation
-
-```
-npm install -g git-lazy
-# or
-pnpm add -g git-lazy
-```
-
-## Usage
-
-```
-git-lazy [command] [options]
-```
-
-## Development
-
-### Requirements
-
-- Node.js >= 14.0.0
-- PNPM >= 10.8.0
-
-### Setup
-
-```
-# Clone the repository
-git clone https://github.com/yourusername/git-lazy.git
-cd git-lazy
-
-# Install dependencies
-pnpm install
-```
-
-### Scripts
-
-- `pnpm start`: Run the tool locally
-- `pnpm test`: Run tests
-- `pnpm test:watch`: Run tests in watch mode
-- `pnpm test:coverage`: Run tests with coverage report
-- `pnpm lint`: Run ESLint to check code quality
-- `pnpm format`: Format code with Prettier
-- `pnpm build`: Build the project
-
-## Code Quality
-
-This project uses ESLint and Prettier to ensure code quality and consistent formatting:
-
-- ESLint enforces code quality rules
-- Prettier ensures consistent code formatting
-
-Run the linting and formatting with:
+Streamline your git commits with semantic patterns and intelligent auto-generated messages based on your code changes.
 
 ```bash
-# Check for code quality issues
-pnpm lint
+# Basic semantic commit
+git-lazy commit -t feat -m "user authentication system"
 
-# Format all files
-pnpm format
+# Auto-generate from code changes (coming soon)
+git-lazy commit --auto
+
+# Get suggestions (coming soon)  
+git-lazy commit --suggest
 ```
 
-## License
+## Status
+- ✅ Basic commit interface & validation
+- 🚧 Semantic message auto-generation
+- 🚧 Code change analysis
 
-ISC
+## Quick Start
+```bash
+pnpm install
+pnpm start
+```
+
+*Focus: Smart semantic commits that save you time while keeping your history clean.*
